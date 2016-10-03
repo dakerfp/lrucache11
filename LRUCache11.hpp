@@ -202,9 +202,6 @@ struct List {
 		n->unlink();
 		if (!head) {
 			head = n;
-		} else if (head == tail) {
-			head->next = n;
-			n->prev = head;
 		} else {
 			tail->next = n;
 			n->prev = tail;
